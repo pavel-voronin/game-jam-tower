@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://rx6kgvr6ac5m"
-path="res://.godot/imported/tileset.png-c50288acd069fa293d7940a084811264.ctex"
+uid="uid://p5tdh2muvdwt"
+path="res://.godot/imported/[tileset] placeholder floor _ ver 01n.png-073808a434da733f55b862e67cb2aeb0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tileset.png"
-dest_files=["res://.godot/imported/tileset.png-c50288acd069fa293d7940a084811264.ctex"]
+source_file="res://assets/Assets Art/AssetExports/[tileset] placeholder floor _ ver 01n.png"
+dest_files=["res://.godot/imported/[tileset] placeholder floor _ ver 01n.png-073808a434da733f55b862e67cb2aeb0.ctex"]
 
 [params]
 

@@ -6,7 +6,7 @@
 [ext_resource type="Script" path="res://scenes/SeesClosest.gd" id="2_i8iuj"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_lscwh"]
-radius = 1000.0
+radius = 800.0
 
 [node name="SimpleGun" type="Node2D"]
 script = ExtResource("1_k0p8x")
@@ -39,7 +39,6 @@ position = Vector2(25, -2.18557e-06)
 rotation = 3.14159
 
 [node name="AttackArea" type="Area2D" parent="."]
-visible = false
 collision_layer = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea"]

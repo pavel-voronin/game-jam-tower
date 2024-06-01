@@ -215,6 +215,7 @@ layout_mode = 2
 text = "Remove Gun"
 
 [connection signal="amount_updated" from="Money" to="UI" method="_on_money_amount_updated"]
+[connection signal="die" from="Tower" to="." method="_on_tower_die"]
 [connection signal="hp_updated" from="Tower" to="UI" method="_on_tower_hp_updated"]
 [connection signal="pressed" from="UI/GunShop/VBoxContainer/HBoxContainer/CloseButton" to="UI/GunShop" method="_on_close_button_pressed"]
 [connection signal="buy" from="UI/GunShop/VBoxContainer/MarginContainer2/GridContainer/VBoxContainer/Button" to="UI/GunShop" method="_on_button_buy"]

@@ -23,7 +23,8 @@ func hit(damage: int) -> void:
 func init_designs() -> void:
 	for i in range(DESIGNS_AMOUNT):
 		designs.append(i)
-	designs.reverse()
+	designs.shuffle()
+
 
 func set_root() -> void:
 	var p = get_parent()

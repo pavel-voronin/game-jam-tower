@@ -1,0 +1,51 @@
+[gd_scene load_steps=7 format=3 uid="uid://tghdn3hgwgxi"]
+
+[ext_resource type="Script" path="res://scenes/tower.gd" id="1_whb7w"]
+[ext_resource type="Texture2D" uid="uid://4cmps6x8rpeh" path="res://assets/buy-level.png" id="3_u8ppx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m0b4i"]
+size = Vector2(256, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jfokw"]
+atlas = ExtResource("3_u8ppx")
+region = Rect2(0, 96, 256, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vqk3h"]
+atlas = ExtResource("3_u8ppx")
+region = Rect2(0, 0, 256, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_086ik"]
+atlas = ExtResource("3_u8ppx")
+region = Rect2(0, 192, 256, 96)
+
+[node name="Tower" type="Area2D"]
+collision_layer = 2
+script = ExtResource("1_whb7w")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(0, -48)
+shape = SubResource("RectangleShape2D_m0b4i")
+
+[node name="BuyLevelButton" type="TextureButton" parent="."]
+offset_left = -128.0
+offset_top = -192.0
+offset_right = 128.0
+offset_bottom = -96.0
+texture_normal = SubResource("AtlasTexture_jfokw")
+texture_hover = SubResource("AtlasTexture_vqk3h")
+texture_disabled = SubResource("AtlasTexture_086ik")
+
+[node name="Cost" type="Label" parent="BuyLevelButton"]
+layout_mode = 0
+offset_left = 108.0
+offset_top = 24.0
+offset_right = 148.0
+offset_bottom = 71.0
+theme_override_font_sizes/font_size = 34
+text = "25"
+
+[node name="Levels" type="Node2D" parent="."]
+position = Vector2(0, -48)
+
+[connection signal="pressed" from="BuyLevelButton" to="." method="_on_buy_level_button_pressed"]

@@ -1,0 +1,69 @@
+[gd_scene load_steps=11 format=3 uid="uid://bk6i4mmqvmj81"]
+
+[ext_resource type="Script" path="res://scenes/soldier.gd" id="1_0vjqv"]
+[ext_resource type="Texture2D" uid="uid://q7wimm4ke5u6" path="res://assets/enemies.png" id="1_g8lvy"]
+[ext_resource type="Script" path="res://scenes/ConstantMovement.gd" id="2_rh7fd"]
+[ext_resource type="Script" path="res://scenes/Attacks.gd" id="3_gbdho"]
+[ext_resource type="Script" path="res://scenes/ShowsHP.gd" id="4_5phjm"]
+[ext_resource type="Texture2D" uid="uid://rkervyjg0fhe" path="res://assets/hp.png" id="6_d3c4c"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3rty6"]
+radius = 32.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q2v8v"]
+size = Vector2(1, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a21fe"]
+atlas = ExtResource("6_d3c4c")
+region = Rect2(0, 0, 64, 6)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0s442"]
+atlas = ExtResource("6_d3c4c")
+region = Rect2(0, 6, 64, 6)
+
+[node name="Soldier" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_0vjqv")
+
+[node name="ConstantMovement" type="Node" parent="."]
+script = ExtResource("2_rh7fd")
+
+[node name="Attacks" type="Node" parent="."]
+script = ExtResource("3_gbdho")
+
+[node name="Timer" type="Timer" parent="Attacks"]
+
+[node name="ShowsHP" type="Node" parent="."]
+script = ExtResource("4_5phjm")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_g8lvy")
+region_enabled = true
+region_rect = Rect2(0, 0, 64, 64)
+
+[node name="PhysicalBodyArea" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource("CircleShape2D_3rty6")
+
+[node name="AttackArea" type="Area2D" parent="."]
+visible = false
+position = Vector2(0, 32)
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea"]
+position = Vector2(32.5, -32)
+shape = SubResource("RectangleShape2D_q2v8v")
+
+[node name="HPBar" type="TextureProgressBar" parent="."]
+offset_left = -32.0
+offset_top = -41.0
+offset_right = 32.0
+offset_bottom = -35.0
+max_value = 2.0
+value = 2.0
+texture_under = SubResource("AtlasTexture_a21fe")
+texture_progress = SubResource("AtlasTexture_0s442")
+
+[connection signal="timeout" from="Attacks/Timer" to="Attacks" method="_on_timer_timeout"]
+[connection signal="area_entered" from="AttackArea" to="Attacks" method="_on_attack_area_area_entered"]

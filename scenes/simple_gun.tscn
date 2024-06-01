@@ -1,0 +1,48 @@
+[gd_scene load_steps=6 format=3 uid="uid://bj2jwsffkrpm7"]
+
+[ext_resource type="Texture2D" uid="uid://84lqiinmhve8" path="res://assets/guns.png" id="1_eghve"]
+[ext_resource type="Script" path="res://scenes/AttacksClosest.gd" id="1_fo221"]
+[ext_resource type="Script" path="res://scenes/simple_gun.gd" id="1_k0p8x"]
+[ext_resource type="Script" path="res://scenes/SeesClosest.gd" id="2_i8iuj"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lscwh"]
+radius = 1000.0
+
+[node name="SimpleGun" type="Node2D"]
+script = ExtResource("1_k0p8x")
+
+[node name="AttacksClosest" type="Node" parent="."]
+script = ExtResource("1_fo221")
+
+[node name="Timer" type="Timer" parent="AttacksClosest"]
+wait_time = 0.5
+autostart = true
+
+[node name="SeesClosest" type="Node" parent="."]
+script = ExtResource("2_i8iuj")
+
+[node name="Body" type="Sprite2D" parent="."]
+texture = ExtResource("1_eghve")
+region_enabled = true
+region_rect = Rect2(0, 0, 32, 32)
+
+[node name="Barrel" type="Sprite2D" parent="."]
+position = Vector2(-8, 0)
+rotation = 3.14159
+texture = ExtResource("1_eghve")
+offset = Vector2(11, 0)
+region_enabled = true
+region_rect = Rect2(32, 0, 32, 32)
+
+[node name="BulletStartPoint" type="Marker2D" parent="Barrel"]
+position = Vector2(25, -2.18557e-06)
+rotation = 3.14159
+
+[node name="AttackArea" type="Area2D" parent="."]
+visible = false
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea"]
+shape = SubResource("CircleShape2D_lscwh")
+
+[connection signal="timeout" from="AttacksClosest/Timer" to="AttacksClosest" method="_on_timer_timeout"]

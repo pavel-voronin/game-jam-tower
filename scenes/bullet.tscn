@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://dyjx8img5pdow"]
+
+[ext_resource type="Script" path="res://scenes/bullet.gd" id="1_uxpf6"]
+[ext_resource type="Script" path="res://scenes/FliesTowardsEnemy.gd" id="2_uoxb1"]
+[ext_resource type="Script" path="res://scenes/HitsEnemy.gd" id="3_j0ayt"]
+[ext_resource type="Texture2D" uid="uid://1x1t7btj6p6a" path="res://assets/bullets.png" id="4_08syc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8spq5"]
+radius = 6.0
+
+[node name="Bullet" type="Area2D"]
+collision_layer = 0
+script = ExtResource("1_uxpf6")
+
+[node name="FliesTowardsEnemy" type="Node" parent="."]
+script = ExtResource("2_uoxb1")
+
+[node name="HitsOneEnemy" type="Node" parent="."]
+script = ExtResource("3_j0ayt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource("CircleShape2D_8spq5")
+
+[node name="Bullets" type="Sprite2D" parent="."]
+texture = ExtResource("4_08syc")
+region_enabled = true
+region_rect = Rect2(0, 0, 12, 12)
+
+[connection signal="area_entered" from="." to="HitsOneEnemy" method="_on_bullet_area_entered"]

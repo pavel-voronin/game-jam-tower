@@ -1,0 +1,52 @@
+[gd_scene load_steps=8 format=3 uid="uid://digg53qm3pkwa"]
+
+[ext_resource type="Script" path="res://scenes/mount_point.gd" id="1_tqfna"]
+[ext_resource type="Texture2D" uid="uid://bt1rhq2yqstba" path="res://assets/mount-points.png" id="2_ff0tu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_us1r5"]
+atlas = ExtResource("2_ff0tu")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3dskh"]
+atlas = ExtResource("2_ff0tu")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tqwud"]
+atlas = ExtResource("2_ff0tu")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d1n0d"]
+atlas = ExtResource("2_ff0tu")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gkecd"]
+atlas = ExtResource("2_ff0tu")
+region = Rect2(32, 32, 32, 32)
+
+[node name="MointPoint" type="Node2D"]
+script = ExtResource("1_tqfna")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+
+[node name="BuyButton" type="TextureButton" parent="."]
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 16.0
+offset_bottom = 16.0
+focus_mode = 0
+disabled = true
+texture_normal = SubResource("AtlasTexture_us1r5")
+texture_hover = SubResource("AtlasTexture_3dskh")
+texture_disabled = SubResource("AtlasTexture_tqwud")
+
+[node name="EditButton" type="TextureButton" parent="."]
+z_index = 1
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 16.0
+offset_bottom = 16.0
+texture_normal = SubResource("AtlasTexture_d1n0d")
+texture_hover = SubResource("AtlasTexture_gkecd")
+
+[connection signal="pressed" from="BuyButton" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="EditButton" to="." method="_on_edit_button_pressed"]

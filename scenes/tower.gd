@@ -35,10 +35,6 @@ func _ready() -> void:
 	set_root()
 	init_designs()
 	place_level()
-	place_level()
-	place_level()
-	place_level()
-	place_level()
 	root.get_node("Money").amount_updated.connect(update_buy_button)
 
 func get_price() -> int:

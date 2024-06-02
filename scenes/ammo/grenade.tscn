@@ -3,8 +3,8 @@
 [ext_resource type="Script" path="res://scenes/ammo/grenade.gd" id="1_1ayek"]
 [ext_resource type="Script" path="res://scenes/ammo/FliesTowardsEnemyParabollicaly.gd" id="2_tlf6j"]
 [ext_resource type="Script" path="res://scenes/ammo/HitsEnemyInArea.gd" id="3_227le"]
+[ext_resource type="Texture2D" uid="uid://d1f7w00s2p30k" path="res://assets/ammo-bubblegum.png" id="4_uu0e1"]
 [ext_resource type="AudioStream" uid="uid://djwyvqy70i1xx" path="res://assets/SFX and BGM/Shots/Shot2.mp3" id="5_bp6o7"]
-[ext_resource type="Texture2D" uid="uid://1x1t7btj6p6a" path="res://assets/bullets.png" id="5_quc3n"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_8spq5"]
 radius = 6.0
@@ -64,9 +64,9 @@ visible = false
 shape = SubResource("CircleShape2D_8spq5")
 
 [node name="Bullets" type="Sprite2D" parent="."]
-texture = ExtResource("5_quc3n")
+texture = ExtResource("4_uu0e1")
 region_enabled = true
-region_rect = Rect2(12, 0, 12, 12)
+region_rect = Rect2(23, 14, 49, 45)
 
 [node name="Boom" type="MeshInstance2D" parent="."]
 modulate = Color(1, 1, 1, 0)

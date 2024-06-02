@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dd7qu01b5neum"
-path="res://.godot/imported/levels.png-a6e910382d32e95b5c3f382bb559bde4.ctex"
+uid="uid://bt4hck41urldg"
+path="res://.godot/imported/gun-bubblegumbomb.png-e45519d689636819c373e61ed06e2b7b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/levels.png"
-dest_files=["res://.godot/imported/levels.png-a6e910382d32e95b5c3f382bb559bde4.ctex"]
+source_file="res://assets/gun-bubblegumbomb.png"
+dest_files=["res://.godot/imported/gun-bubblegumbomb.png-e45519d689636819c373e61ed06e2b7b.ctex"]
 
 [params]
 

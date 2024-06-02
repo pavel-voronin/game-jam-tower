@@ -2,12 +2,14 @@ extends Node
 
 @onready var parent: Node2D = $".."
 @onready var eyes: Node = $"../SeesClosestParabollicaly"
-@onready var barrel: Sprite2D = $"../Barrel"
-@onready var bullet_start_point: Marker2D = $"../Barrel/BulletStartPoint"
+@onready var bullet_start_point: Marker2D = $"../BulletStartPoint"
 @onready var audio: AudioStreamPlayer = $"../AudioStreamPlayer"
+@onready var ammo: Sprite2D = $"../Ammo-bubblegum"
 
 # Код для запуска снаряда
 func fire(enemy: Enemy) -> void:
+	ammo.hide()
+	var timer = get_tree().create_timer(0.5)
 	audio.play()
 
 	var bullet: Node2D = parent.bullet_prefab.instantiate()
@@ -18,7 +20,7 @@ func fire(enemy: Enemy) -> void:
 	# Устанавливаем фиксированный угол 45 градусов
 	var launch_angle_degrees = 180.0 + 45.0
 	var launch_angle_radians = deg_to_rad(launch_angle_degrees)
-	bullet.rotation = launch_angle_radians
+	#bullet.rotation = launch_angle_radians
 
 	# Вычисляем начальную скорость
 	var target_position = enemy.global_position
@@ -26,6 +28,9 @@ func fire(enemy: Enemy) -> void:
 	var dy = target_position.y - bullet.global_position.y
 	var initial_speed = calculate_initial_speed(dx, dy, launch_angle_radians, bullet.gravity)
 	bullet.set_initial_velocity(initial_speed, launch_angle_radians)
+
+	await timer.timeout
+	ammo.show()
 
 # Функция для вычисления начальной скорости
 func calculate_initial_speed(dx: float, dy: float, angle: float, gravity: float) -> float:

@@ -1,6 +1,6 @@
 [gd_scene load_steps=20 format=3 uid="uid://bbvvtjjikem7i"]
 
-[ext_resource type="Texture2D" uid="uid://cmo1eeiq4u080" path="res://assets/levels.png" id="1_o5pdv"]
+[ext_resource type="Texture2D" uid="uid://dd7qu01b5neum" path="res://assets/levels.png" id="1_o5pdv"]
 [ext_resource type="Script" path="res://scenes/level.gd" id="2_6xd3u"]
 [ext_resource type="PackedScene" uid="uid://digg53qm3pkwa" path="res://scenes/mount_point.tscn" id="3_u3tha"]
 
@@ -144,4 +144,4 @@ animation = &"level1"
 script = ExtResource("2_6xd3u")
 
 [node name="MountPoint" parent="." instance=ExtResource("3_u3tha")]
-position = Vector2(-113, -1)
+position = Vector2(-110, -1)

@@ -24,7 +24,6 @@ func boom() -> void:
 		var distance = parent.global_position.distance_to(enemy.global_position)
 
 		if distance <= radius:
-			print(enemy)
 			enemy.hit(parent.strength)
 
 	await animation_player.animation_finished

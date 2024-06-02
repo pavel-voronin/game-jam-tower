@@ -4,15 +4,19 @@ extends Node
 @export var radius: float = 150.0
 @onready var explosion: MeshInstance2D = $"../Boom"
 @onready var animation_player: AnimationPlayer = $"../AnimationPlayer"
+var boomed := false
 
 func _physics_process(delta: float) -> void:
-	if parent.global_position.y >= 582:
+	if parent.global_position.y >= 582 and not boomed:
 		boom()
 
 func _on_bullet_area_entered(enemy_or_ground: Area2D) -> void:
 	boom()
 
 func boom() -> void:
+	if boomed:
+		return
+	boomed = true
 	$"../Bullets".visible = false
 	animation_player.play("boom")
 

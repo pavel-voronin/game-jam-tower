@@ -1,15 +1,22 @@
 class_name Enemy
 extends Area2D
 
-signal hp_updated(amount: int)
+signal hp_updated(amount: float)
 signal die(enemy: Enemy)
 
-@export var hp: int = 2
-@export var cost: int = 1
-@export var speed: int = 100
-@export var strength: int = 1
+@export var hp: float
+@export var cost: int
+@export var speed: int
+@export var strength: float
+var wave_number: int
 
-func hit(damage: int) -> void:
+func _ready() -> void:
+	hp = 1.2 * wave_number
+	cost = 1 * wave_number
+	speed = randi_range(90, 110) + wave_number * 3
+	strength = 0.4 * wave_number
+
+func hit(damage: float) -> void:
 	hp -= damage
 	if hp <= 0:
 		die.emit(self)

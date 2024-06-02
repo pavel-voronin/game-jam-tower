@@ -17,7 +17,7 @@ script = ExtResource("1_7q5hx")
 script = ExtResource("2_34evp")
 
 [node name="Timer" type="Timer" parent="AttacksParabollicaly"]
-wait_time = 3.0
+wait_time = 2.0
 autostart = true
 
 [node name="SeesClosestParabollicaly" type="Node" parent="."]

@@ -2,7 +2,7 @@ extends Node2D
 
 @export var enemy_prefab: PackedScene
 var pack_amount_conf = [1, 5]
-var pack_delay_conf = [1.0, 2.0]
+var pack_delay_conf = [1.5, 3.0]
 var pack_interval_conf = [0.5, 1.0]
 
 var pack_amount
@@ -10,11 +10,13 @@ var pack_delay
 var pack_interval
 
 var timer: float = 0
+var wave_number: int = 0
 
 func configure() -> void:
 	pack_amount = randi_range(pack_amount_conf[0], pack_amount_conf[1])
 	pack_delay = randf_range(pack_delay_conf[0], pack_delay_conf[1])
 	pack_interval = randf_range(pack_interval_conf[0], pack_interval_conf[1])
+	wave_number += 1
 	timer = pack_interval
 
 func _ready() -> void:
@@ -38,6 +40,7 @@ func _physics_process(delta: float) -> void:
 
 func emit() -> void:
 	var instance: Enemy = enemy_prefab.instantiate()
+	instance.wave_number = wave_number
 	get_parent().add_child(instance)
 	instance.global_position = global_position
 	instance.die.connect($"../Money".apprize)

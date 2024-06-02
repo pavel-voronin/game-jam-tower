@@ -4,6 +4,7 @@ extends Node
 @onready var eyes: Node = $"../SeesClosest"
 @onready var barrel: Sprite2D = $"../Barrel"
 @onready var bullet_start_point: Marker2D = $"../Barrel/BulletStartPoint"
+@onready var audio: AudioStreamPlayer = $"../AudioStreamPlayer"
 
 func fire(enemy: Enemy) -> void:
 	var bullet: Node2D = parent.bullet_prefab.instantiate()
@@ -11,6 +12,7 @@ func fire(enemy: Enemy) -> void:
 	parent.root.add_child(bullet)
 	bullet.global_position = bullet_start_point.global_position
 	bullet.look_at(enemy.global_position)
+	audio.play()
 
 func _on_timer_timeout() -> void:
 	var enemy = eyes.get_closest_enemy()

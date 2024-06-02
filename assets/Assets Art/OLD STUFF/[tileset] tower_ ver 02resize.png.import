@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cu600bsv4vr7h"
-path="res://.godot/imported/[tileset] floor _ ver 02resize.png-7722d3606c7890981d1c2d2e8f6d166f.ctex"
+uid="uid://cqkpfb1hlkd5g"
+path="res://.godot/imported/[tileset] tower_ ver 02resize.png-35a470b7add8a90deaa504ef475753d9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Assets Art/AssetExports/[tileset] floor _ ver 02resize.png"
-dest_files=["res://.godot/imported/[tileset] floor _ ver 02resize.png-7722d3606c7890981d1c2d2e8f6d166f.ctex"]
+source_file="res://assets/Assets Art/OLD STUFF/[tileset] tower_ ver 02resize.png"
+dest_files=["res://.godot/imported/[tileset] tower_ ver 02resize.png-35a470b7add8a90deaa504ef475753d9.ctex"]
 
 [params]
 

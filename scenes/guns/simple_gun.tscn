@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://bj2jwsffkrpm7"]
+[gd_scene load_steps=7 format=3 uid="uid://bj2jwsffkrpm7"]
 
 [ext_resource type="Texture2D" uid="uid://foyybv82obwi" path="res://assets/guns.png" id="1_eghve"]
 [ext_resource type="Script" path="res://scenes/AttacksClosest.gd" id="1_fo221"]
 [ext_resource type="Script" path="res://scenes/guns/simple_gun.gd" id="1_k0p8x"]
 [ext_resource type="Script" path="res://scenes/SeesClosest.gd" id="2_i8iuj"]
+[ext_resource type="AudioStream" uid="uid://c2yhp4wjhq8kr" path="res://assets/SFX and BGM/Shots/Shot1.mp3" id="5_pq106"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_lscwh"]
 radius = 800.0
@@ -43,5 +44,8 @@ collision_layer = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea"]
 shape = SubResource("CircleShape2D_lscwh")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_pq106")
 
 [connection signal="timeout" from="AttacksClosest/Timer" to="AttacksClosest" method="_on_timer_timeout"]

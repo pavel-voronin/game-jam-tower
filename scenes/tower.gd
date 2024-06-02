@@ -61,10 +61,14 @@ func place_buy_button() -> void:
 
 		buy_button.disabled = get_price() > root.get_node("Money").amount
 
-func place_level() -> void:
+func place_level(play_sound: bool = false) -> void:
 	var level: Level = level_prefab.instantiate()
 	levels.add_child(level)
 	level.global_position = levels.global_position - Vector2(0, 108 * (levels.get_child_count() - 1))
+
+	if play_sound:
+		$AudioStreamPlayer.play()
+
 	var design = designs.pop_front()
 	level.animation = "level%s" % design
 	level.play()
@@ -73,4 +77,4 @@ func place_level() -> void:
 func _on_buy_level_button_pressed() -> void:
 	if root.get_node("Money").can_spend(get_price()):
 		root.get_node("Money").spend(get_price())
-		place_level()
+		place_level(true)

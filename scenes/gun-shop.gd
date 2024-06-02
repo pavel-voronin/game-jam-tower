@@ -15,15 +15,17 @@ func update_buttons(amount: int) -> void:
 	grenade_launcher.disabled = grenade_launcher.price > amount
 
 func _on_close_button_pressed() -> void:
-	visible = false
+	close()
 
 func open(mount_point: MointPoint) -> void:
 	current_mount_point = mount_point
 	visible = true
+	$AudioStreamPlayer.play()
 
 func close() -> void:
 	current_mount_point = null
 	visible = false
+	$AudioStreamPlayer2.play()
 
 func _on_button_buy(prefab: PackedScene, price: int) -> void:
 	if not money.can_spend(price):

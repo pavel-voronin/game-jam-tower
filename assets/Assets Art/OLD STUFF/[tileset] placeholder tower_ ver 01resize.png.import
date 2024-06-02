@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b067ciu6jv0rg"
-path="res://.godot/imported/ground-tileset.png-efaea0bf26c404225de1f449e88149fb.ctex"
+uid="uid://c1ywnqsrfjw7e"
+path="res://.godot/imported/[tileset] placeholder tower_ ver 01resize.png-2571a79c10fbab23834a44b24551eca6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ground-tileset.png"
-dest_files=["res://.godot/imported/ground-tileset.png-efaea0bf26c404225de1f449e88149fb.ctex"]
+source_file="res://assets/Assets Art/OLD STUFF/[tileset] placeholder tower_ ver 01resize.png"
+dest_files=["res://.godot/imported/[tileset] placeholder tower_ ver 01resize.png-2571a79c10fbab23834a44b24551eca6.ctex"]
 
 [params]
 

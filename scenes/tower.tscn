@@ -8,15 +8,15 @@ size = Vector2(256, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jfokw"]
 atlas = ExtResource("3_u8ppx")
-region = Rect2(0, 96, 256, 96)
+region = Rect2(0, 112, 256, 112)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vqk3h"]
 atlas = ExtResource("3_u8ppx")
-region = Rect2(0, 0, 256, 96)
+region = Rect2(0, 0, 256, 112)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_086ik"]
 atlas = ExtResource("3_u8ppx")
-region = Rect2(0, 192, 256, 96)
+region = Rect2(0, 224, 256, 112)
 
 [node name="Tower" type="Area2D"]
 collision_layer = 2

@@ -92,7 +92,7 @@ position = Vector2(580, 49)
 shape = SubResource("RectangleShape2D_dtovp")
 
 [node name="Tower" parent="." instance=ExtResource("4_7ieag")]
-position = Vector2(1024, 610)
+position = Vector2(1024, 570)
 
 [node name="WaveEmitter" parent="." instance=ExtResource("3_lj5df")]
 position = Vector2(-85, 566)

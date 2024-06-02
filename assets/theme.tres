@@ -1,0 +1,7 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://bq2b2e7jcahrm"]
+
+[ext_resource type="FontFile" uid="uid://c80vukhaeky2j" path="res://assets/voltergoldfish.ttf" id="1_2ci4m"]
+
+[resource]
+Button/fonts/font = ExtResource("1_2ci4m")
+Label/fonts/font = ExtResource("1_2ci4m")

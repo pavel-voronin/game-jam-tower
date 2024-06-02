@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://b2hbvmuxheibk"]
+[gd_scene load_steps=24 format=3 uid="uid://b2hbvmuxheibk"]
 
 [ext_resource type="Script" path="res://scenes/game.gd" id="1_0c27l"]
 [ext_resource type="Script" path="res://scenes/Money.gd" id="2_0eyvk"]
@@ -12,7 +12,9 @@
 [ext_resource type="PackedScene" uid="uid://bj2jwsffkrpm7" path="res://scenes/guns/simple_gun.tscn" id="6_mkp5x"]
 [ext_resource type="Script" path="res://scenes/gun-shop.gd" id="8_u15ox"]
 [ext_resource type="Texture2D" uid="uid://foyybv82obwi" path="res://assets/guns.png" id="9_f3f1a"]
+[ext_resource type="Texture2D" uid="uid://bnyj8yjurq3la" path="res://assets/gunshop.png" id="11_ny6q7"]
 [ext_resource type="Script" path="res://scenes/BuyButton.gd" id="11_spcmf"]
+[ext_resource type="Theme" uid="uid://bq2b2e7jcahrm" path="res://assets/theme.tres" id="12_tty33"]
 [ext_resource type="Script" path="res://scenes/gun-workshop.gd" id="13_7yvh6"]
 [ext_resource type="PackedScene" uid="uid://cm2m8w1ua6mjt" path="res://scenes/guns/grenade_launcher.tscn" id="13_lj67y"]
 [ext_resource type="AudioStream" uid="uid://dlrf8t7eyjkqj" path="res://assets/SFX and BGM/Menu/openGunMenu.wav" id="15_int75"]
@@ -85,13 +87,21 @@ offset_bottom = 67.0
 theme_override_font_sizes/font_size = 48
 text = "Money: 5"
 
-[node name="GunShop" type="Panel" parent="UI"]
+[node name="GunShop" type="Control" parent="UI"]
 visible = false
+layout_mode = 3
+anchors_preset = 0
 offset_left = 54.0
 offset_top = 105.0
 offset_right = 866.0
 offset_bottom = 506.0
 script = ExtResource("8_u15ox")
+
+[node name="TextureRect" type="TextureRect" parent="UI/GunShop"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("11_ny6q7")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="UI/GunShop"]
 layout_mode = 1
@@ -107,13 +117,14 @@ layout_mode = 2
 [node name="MarginContainer" type="MarginContainer" parent="UI/GunShop/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_constants/margin_left = 16
-theme_override_constants/margin_top = 8
+theme_override_constants/margin_left = 31
+theme_override_constants/margin_top = 12
 theme_override_constants/margin_bottom = 8
 
 [node name="Label" type="Label" parent="UI/GunShop/VBoxContainer/HBoxContainer/MarginContainer"]
 layout_mode = 2
 size_flags_vertical = 1
+theme = ExtResource("12_tty33")
 theme_override_font_sizes/font_size = 36
 text = "Buy a gun"
 
@@ -126,7 +137,7 @@ text = "x"
 [node name="MarginContainer2" type="MarginContainer" parent="UI/GunShop/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_constants/margin_left = 16
+theme_override_constants/margin_left = 50
 theme_override_constants/margin_top = 16
 theme_override_constants/margin_right = 16
 theme_override_constants/margin_bottom = 16
@@ -144,6 +155,7 @@ theme_override_constants/separation = 10
 
 [node name="Label" type="Label" parent="UI/GunShop/VBoxContainer/MarginContainer2/GridContainer/BulletGun"]
 layout_mode = 2
+theme = ExtResource("12_tty33")
 text = "Bullet Gun"
 
 [node name="TextureRect" type="TextureRect" parent="UI/GunShop/VBoxContainer/MarginContainer2/GridContainer/BulletGun"]
@@ -153,6 +165,7 @@ texture = SubResource("AtlasTexture_5esxu")
 
 [node name="Button" type="Button" parent="UI/GunShop/VBoxContainer/MarginContainer2/GridContainer/BulletGun"]
 layout_mode = 2
+theme = ExtResource("12_tty33")
 text = "Buy $5"
 script = ExtResource("11_spcmf")
 price = 5
@@ -165,6 +178,7 @@ theme_override_constants/separation = 10
 
 [node name="Label" type="Label" parent="UI/GunShop/VBoxContainer/MarginContainer2/GridContainer/GrenadeLauncher"]
 layout_mode = 2
+theme = ExtResource("12_tty33")
 text = "Grenade Launcher"
 
 [node name="TextureRect" type="TextureRect" parent="UI/GunShop/VBoxContainer/MarginContainer2/GridContainer/GrenadeLauncher"]
@@ -174,6 +188,7 @@ texture = SubResource("AtlasTexture_p58v3")
 
 [node name="Button" type="Button" parent="UI/GunShop/VBoxContainer/MarginContainer2/GridContainer/GrenadeLauncher"]
 layout_mode = 2
+theme = ExtResource("12_tty33")
 text = "Buy $15"
 script = ExtResource("11_spcmf")
 price = 15

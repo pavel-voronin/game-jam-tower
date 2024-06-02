@@ -2,7 +2,7 @@ extends CanvasLayer
 
 @onready var hp_label: Label = $HP
 @onready var resource_label: Label = $Resource
-@onready var buy_a_gun_modal: Panel = $GunShop
+@onready var buy_a_gun_modal: Control = $GunShop
 @onready var edit_gun_modal: Panel = $GunWorkshop
 
 func _on_tower_hp_updated(amount: int) -> void:

@@ -2,7 +2,7 @@ extends Node
 
 @onready var parent: Area2D = $".."
 var distance := 0.0
-const MAX_DISTANCE = 800.0
+const MAX_DISTANCE = 1200.0
 var initial_position: Vector2
 
 func _ready() -> void:

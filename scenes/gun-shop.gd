@@ -1,4 +1,4 @@
-extends Panel
+extends Control
 
 var current_mount_point: MointPoint
 @onready var money: Money = $"../../Money"

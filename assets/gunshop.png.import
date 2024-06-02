@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cth6sgalylxmx"
-path="res://.godot/imported/[ui] weaponshop.png-0d322301283644efe1239f9ee1f39037.ctex"
+uid="uid://bnyj8yjurq3la"
+path="res://.godot/imported/gunshop.png-fcf1f0e01b0cdd89bdb05dccc2ddb76f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Assets Art/AssetExports/[ui] weaponshop.png"
-dest_files=["res://.godot/imported/[ui] weaponshop.png-0d322301283644efe1239f9ee1f39037.ctex"]
+source_file="res://assets/gunshop.png"
+dest_files=["res://.godot/imported/gunshop.png-fcf1f0e01b0cdd89bdb05dccc2ddb76f.ctex"]
 
 [params]
 

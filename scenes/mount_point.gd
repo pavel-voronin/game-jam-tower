@@ -50,4 +50,4 @@ func _on_button_pressed() -> void:
 
 
 func _on_edit_button_pressed() -> void:
-	root.get_node("UI").open_edit_gun_modal(self)
+	remove_gun()

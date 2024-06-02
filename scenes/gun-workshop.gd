@@ -1,7 +1,6 @@
 extends Panel
 
 var current_mount_point: MointPoint
-@onready var money: Money = $"../../Money"
 
 func _on_close_button_pressed() -> void:
 	visible = false

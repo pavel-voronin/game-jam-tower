@@ -22,8 +22,8 @@ func hit(damage: int) -> void:
 
 func init_designs() -> void:
 	for i in range(DESIGNS_AMOUNT):
-		designs.append(i)
-	designs.reverse()
+		designs.append("%d" % [i + 1])
+	#designs.reverse()
 
 func set_root() -> void:
 	var p = get_parent()
@@ -56,7 +56,7 @@ func place_buy_button() -> void:
 		buy_button.hide()
 	else:
 		buy_button.show()
-		buy_button.global_position = levels.global_position - Vector2(128, 112 * (levels.get_child_count()) + 56)
+		buy_button.global_position = levels.global_position - Vector2(128, 108 * (levels.get_child_count()) + 108 / 2)
 		buy_button.get_node("Cost").text = str(get_price())
 
 		buy_button.disabled = get_price() > root.get_node("Money").amount
@@ -64,9 +64,10 @@ func place_buy_button() -> void:
 func place_level() -> void:
 	var level: Level = level_prefab.instantiate()
 	levels.add_child(level)
-	level.global_position = levels.global_position - Vector2(0, 112 * (levels.get_child_count() - 1))
+	level.global_position = levels.global_position - Vector2(0, 108 * (levels.get_child_count() - 1))
 	var design = designs.pop_front()
-	level.frame = design
+	level.animation = "level%s" % design
+	level.play()
 	place_buy_button()
 
 func _on_buy_level_button_pressed() -> void:

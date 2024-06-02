@@ -2,20 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD
-uid="uid://d0g382rolxee4"
-=======
-uid="uid://4mpq0quve1m2"
->>>>>>> 2cbfb550ac7c44f6ae217e244255c52bc36e978f
-path="res://.godot/imported/[object] tower pala.png-b27095a127a113fe735b3856fec22009.ctex"
+uid="uid://bf00qwc8j81l5"
+path="res://.godot/imported/enemy-soldier.png-52f48f6dba03a1325c5a0288ac861fcc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Assets Art/ASEPRITE files/[object] tower pala.png"
-dest_files=["res://.godot/imported/[object] tower pala.png-b27095a127a113fe735b3856fec22009.ctex"]
+source_file="res://assets/enemy-soldier.png"
+dest_files=["res://.godot/imported/enemy-soldier.png-52f48f6dba03a1325c5a0288ac861fcc.ctex"]
 
 [params]
 

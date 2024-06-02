@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://ctormnikex3h2"
+=======
+uid="uid://cdmswj6ejur5p"
+>>>>>>> 2cbfb550ac7c44f6ae217e244255c52bc36e978f
 path="res://.godot/imported/[ui] weaponshop.png-0d322301283644efe1239f9ee1f39037.ctex"
 metadata={
 "vram_texture": false

@@ -144,4 +144,4 @@ animation = &"level1"
 script = ExtResource("2_6xd3u")
 
 [node name="MountPoint" parent="." instance=ExtResource("3_u3tha")]
-position = Vector2(-128, -1)
+position = Vector2(-124, -1)

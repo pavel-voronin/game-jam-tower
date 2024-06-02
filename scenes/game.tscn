@@ -63,7 +63,7 @@ shape = SubResource("RectangleShape2D_dtovp")
 position = Vector2(1024, 570)
 
 [node name="WaveEmitter" parent="." instance=ExtResource("3_lj5df")]
-position = Vector2(-85, 566)
+position = Vector2(-53, 575)
 enemy_prefab = ExtResource("2_itqq6")
 
 [node name="UI" type="CanvasLayer" parent="."]

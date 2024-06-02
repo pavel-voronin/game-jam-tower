@@ -2,11 +2,7 @@
 
 importer="wav"
 type="AudioStreamWAV"
-<<<<<<< HEAD
-uid="uid://dl82sigfdm2xj"
-=======
-uid="uid://calk3fepnjbew"
->>>>>>> be92f55 (change the  music)
+uid="uid://clehtghyshy26"
 path="res://.godot/imported/RamenShot.wav-47c7e4c1f5951055bf021c29a3abc147.sample"
 
 [deps]

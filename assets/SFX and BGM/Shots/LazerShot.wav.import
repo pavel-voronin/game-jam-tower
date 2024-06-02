@@ -2,11 +2,7 @@
 
 importer="wav"
 type="AudioStreamWAV"
-<<<<<<< HEAD
-uid="uid://dc1lvdmxjubke"
-=======
-uid="uid://blkb0urxxf5vr"
->>>>>>> be92f55 (change the  music)
+uid="uid://la0n2qok0qtq"
 path="res://.godot/imported/LazerShot.wav-f89bb9fffa357a9c19861b869fa45e0d.sample"
 
 [deps]

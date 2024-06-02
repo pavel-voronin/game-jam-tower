@@ -10,7 +10,7 @@ func fire(enemy: Enemy) -> void:
 	bullet.strength = parent.strength
 	parent.root.add_child(bullet)
 	bullet.global_position = bullet_start_point.global_position
-	bullet.look_at(enemy.global_position)
+	bullet.look_at(enemy.global_position - Vector2(0, 54))
 	audio.play()
 
 func _on_timer_timeout() -> void:

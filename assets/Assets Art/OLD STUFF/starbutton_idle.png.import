@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cchn072f8ikhq"
-path="res://.godot/imported/starbutton_idle_blue.png-5e6dd78a4a0196db06b2eb0a062a1d19.ctex"
+uid="uid://dyqvm62qfdepd"
+path="res://.godot/imported/starbutton_idle.png-8c50cab106d7cdcbd257742fbed744bf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Assets Art/AssetExports/starbutton_idle_blue.png"
-dest_files=["res://.godot/imported/starbutton_idle_blue.png-5e6dd78a4a0196db06b2eb0a062a1d19.ctex"]
+source_file="res://assets/Assets Art/OLD STUFF/starbutton_idle.png"
+dest_files=["res://.godot/imported/starbutton_idle.png-8c50cab106d7cdcbd257742fbed744bf.ctex"]
 
 [params]
 

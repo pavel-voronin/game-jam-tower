@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://cjxc3yl17g5s3"]
 
-[ext_resource type="Texture2D" uid="uid://qvmfcgnmuoo0" path="res://assets/Assets Art/AssetExports/[bg] Background credits.png" id="1_h6sbr"]
+[ext_resource type="Texture2D" uid="uid://qvmfcgnmuoo0" path="res://assets/Assets Art/OLD STUFF/[bg] Background credits.png" id="1_h6sbr"]
 [ext_resource type="Script" path="res://scenes/main_menu.gd" id="1_ocdqm"]
 [ext_resource type="AudioStream" uid="uid://c0atq2biekf1o" path="res://assets/SFX and BGM/Music/TowerMusic.wav" id="2_1poi0"]
 [ext_resource type="Theme" uid="uid://bq2b2e7jcahrm" path="res://assets/theme.tres" id="3_3xmdn"]

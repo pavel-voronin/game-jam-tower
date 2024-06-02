@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bqqjnbw1dqe1u"
-path="res://.godot/imported/starbutton_hovered_blue.png-b2ac41d45d5cd301be75783f288984d4.ctex"
+uid="uid://qvmfcgnmuoo0"
+path="res://.godot/imported/[bg] Background credits.png-a21e68303097d934a9b805eefa3ad89d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Assets Art/AssetExports/starbutton_hovered_blue.png"
-dest_files=["res://.godot/imported/starbutton_hovered_blue.png-b2ac41d45d5cd301be75783f288984d4.ctex"]
+source_file="res://assets/Assets Art/OLD STUFF/[bg] Background credits.png"
+dest_files=["res://.godot/imported/[bg] Background credits.png-a21e68303097d934a9b805eefa3ad89d.ctex"]
 
 [params]
 

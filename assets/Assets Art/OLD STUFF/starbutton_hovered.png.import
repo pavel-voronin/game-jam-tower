@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c4dkbj4ppxl2a"
-path="res://.godot/imported/[ui] start button.png-257aa854f70932637407092663f069c3.ctex"
+uid="uid://cjlc8n3m0utqm"
+path="res://.godot/imported/starbutton_hovered.png-eff3e8e50bd1b547185675ffa2a067ab.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Assets Art/AssetExports/[ui] start button.png"
-dest_files=["res://.godot/imported/[ui] start button.png-257aa854f70932637407092663f069c3.ctex"]
+source_file="res://assets/Assets Art/OLD STUFF/starbutton_hovered.png"
+dest_files=["res://.godot/imported/starbutton_hovered.png-eff3e8e50bd1b547185675ffa2a067ab.ctex"]
 
 [params]
 

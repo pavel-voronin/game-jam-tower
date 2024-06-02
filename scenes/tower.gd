@@ -56,7 +56,7 @@ func place_buy_button() -> void:
 		buy_button.hide()
 	else:
 		buy_button.show()
-		buy_button.global_position = levels.global_position - Vector2(128, 96 * (levels.get_child_count()) + 48)
+		buy_button.global_position = levels.global_position - Vector2(128, 144 * (levels.get_child_count()) + 48)
 		buy_button.get_node("Cost").text = str(get_price())
 
 		buy_button.disabled = get_price() > root.get_node("Money").amount
@@ -64,7 +64,7 @@ func place_buy_button() -> void:
 func place_level() -> void:
 	var level: Level = level_prefab.instantiate()
 	levels.add_child(level)
-	level.global_position = levels.global_position - Vector2(0, 96 * (levels.get_child_count() - 1))
+	level.global_position = levels.global_position - Vector2(0, 144 * (levels.get_child_count() - 1))
 	var design = designs.pop_front()
 	level.frame = design
 	place_buy_button()

@@ -1,0 +1,65 @@
+[gd_scene load_steps=9 format=3 uid="uid://b27tcarcn0ev5"]
+
+[ext_resource type="Script" path="res://scenes/ammo/grenade.gd" id="1_1ayek"]
+[ext_resource type="Script" path="res://scenes/ammo/FliesTowardsEnemyParabollicaly.gd" id="2_tlf6j"]
+[ext_resource type="Script" path="res://scenes/ammo/HitsEnemyInArea.gd" id="3_227le"]
+[ext_resource type="Texture2D" uid="uid://1x1t7btj6p6a" path="res://assets/bullets.png" id="5_quc3n"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8spq5"]
+radius = 6.0
+
+[sub_resource type="SphereMesh" id="SphereMesh_7fhug"]
+radius = 150.0
+height = 300.0
+
+[sub_resource type="Animation" id="Animation_mar7j"]
+resource_name = "boom"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Boom:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_scf2k"]
+_data = {
+"boom": SubResource("Animation_mar7j")
+}
+
+[node name="Grenade" type="Area2D"]
+collision_layer = 0
+collision_mask = 5
+script = ExtResource("1_1ayek")
+
+[node name="FliesTowardsEnemyParabollicaly" type="Node" parent="."]
+script = ExtResource("2_tlf6j")
+
+[node name="HitsEnemyInArea" type="Node" parent="."]
+script = ExtResource("3_227le")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource("CircleShape2D_8spq5")
+
+[node name="Bullets" type="Sprite2D" parent="."]
+texture = ExtResource("5_quc3n")
+region_enabled = true
+region_rect = Rect2(12, 0, 12, 12)
+
+[node name="Boom" type="MeshInstance2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+mesh = SubResource("SphereMesh_7fhug")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_scf2k")
+}
+
+[connection signal="area_entered" from="." to="HitsEnemyInArea" method="_on_bullet_area_entered"]

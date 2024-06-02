@@ -20,5 +20,4 @@ func get_closest_enemy() -> Enemy:
 func _physics_process(delta: float) -> void:
 	var enemy = get_closest_enemy()
 	if enemy:
-		barrel.look_at(enemy.global_position)
-
+		barrel.rotation_degrees = 180.0 + 45

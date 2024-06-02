@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cjq3613w7v611"
+path="res://.godot/imported/dismantling.wav-73bd2eba3f26ea9e86d7b2e2ce37680b.sample"
+
+[deps]
+
+source_file="res://assets/SFX and BGM/Building/dismantling.wav"
+dest_files=["res://.godot/imported/dismantling.wav-73bd2eba3f26ea9e86d7b2e2ce37680b.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

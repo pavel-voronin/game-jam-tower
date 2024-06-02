@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://si4v6m03mn6q"
+path="res://.godot/imported/Futurisitc UI Button 2.wav-90dd8cb710b5a462932a95216c10fe7f.sample"
+
+[deps]
+
+source_file="res://assets/SFX and BGM/Menu/Futurisitc UI Button 2.wav"
+dest_files=["res://.godot/imported/Futurisitc UI Button 2.wav-90dd8cb710b5a462932a95216c10fe7f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

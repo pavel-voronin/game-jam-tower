@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://foyybv82obwi"
-path="res://.godot/imported/guns.png-d0d3e29fd57e709ceef2baa69c9a7102.ctex"
+uid="uid://buouabpcvho6g"
+path="res://.godot/imported/[tileset] placeholder tower_ ver 01resize.png-9be0a94196bc4e60a6c4805e0b1dc8e8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/guns.png"
-dest_files=["res://.godot/imported/guns.png-d0d3e29fd57e709ceef2baa69c9a7102.ctex"]
+source_file="res://assets/Assets Art/Artist Folder Ignore/[tileset] placeholder tower_ ver 01resize.png"
+dest_files=["res://.godot/imported/[tileset] placeholder tower_ ver 01resize.png-9be0a94196bc4e60a6c4805e0b1dc8e8.ctex"]
 
 [params]
 

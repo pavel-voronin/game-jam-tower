@@ -1,0 +1,34 @@
+[gd_scene load_steps=7 format=3 uid="uid://b27tcarcn0ev5"]
+
+[ext_resource type="Script" path="res://scenes/ammo/grenade.gd" id="1_1ayek"]
+[ext_resource type="Script" path="res://scenes/FliesTowardsEnemy.gd" id="2_p4ly6"]
+[ext_resource type="Script" path="res://scenes/HitsEnemy.gd" id="3_a7w3p"]
+[ext_resource type="Script" path="res://scenes/ExpiresInDistance.gd" id="4_401os"]
+[ext_resource type="Texture2D" uid="uid://1x1t7btj6p6a" path="res://assets/bullets.png" id="5_quc3n"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8spq5"]
+radius = 6.0
+
+[node name="Grenade" type="Area2D"]
+collision_layer = 0
+script = ExtResource("1_1ayek")
+
+[node name="FliesTowardsEnemy" type="Node" parent="."]
+script = ExtResource("2_p4ly6")
+
+[node name="HitsOneEnemy" type="Node" parent="."]
+script = ExtResource("3_a7w3p")
+
+[node name="ExpiresInDistance" type="Node" parent="."]
+script = ExtResource("4_401os")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource("CircleShape2D_8spq5")
+
+[node name="Bullets" type="Sprite2D" parent="."]
+texture = ExtResource("5_quc3n")
+region_enabled = true
+region_rect = Rect2(12, 0, 12, 12)
+
+[connection signal="area_entered" from="." to="HitsOneEnemy" method="_on_bullet_area_entered"]

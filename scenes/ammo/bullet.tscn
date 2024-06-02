@@ -1,13 +1,42 @@
-[gd_scene load_steps=7 format=3 uid="uid://dyjx8img5pdow"]
+[gd_scene load_steps=11 format=3 uid="uid://dyjx8img5pdow"]
 
 [ext_resource type="Script" path="res://scenes/ammo/bullet.gd" id="1_qjwc1"]
 [ext_resource type="Script" path="res://scenes/FliesTowardsEnemy.gd" id="2_mesec"]
 [ext_resource type="Script" path="res://scenes/HitsEnemy.gd" id="3_eost1"]
 [ext_resource type="Script" path="res://scenes/ExpiresInDistance.gd" id="4_m4q3y"]
-[ext_resource type="Texture2D" uid="uid://1x1t7btj6p6a" path="res://assets/bullets.png" id="5_aasqj"]
+[ext_resource type="Texture2D" uid="uid://df286l7yetoos" path="res://assets/ammo-bullet.png" id="5_4vur4"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_8spq5"]
 radius = 6.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cy7ek"]
+atlas = ExtResource("5_4vur4")
+region = Rect2(0, 0, 36, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q38m3"]
+atlas = ExtResource("5_4vur4")
+region = Rect2(36, 0, 36, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fpg5q"]
+atlas = ExtResource("5_4vur4")
+region = Rect2(72, 0, 36, 36)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mdt4v"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cy7ek")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q38m3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fpg5q")
+}],
+"loop": true,
+"name": &"default",
+"speed": 18.0
+}]
 
 [node name="Bullet" type="Area2D"]
 collision_layer = 0
@@ -26,9 +55,8 @@ script = ExtResource("4_m4q3y")
 visible = false
 shape = SubResource("CircleShape2D_8spq5")
 
-[node name="Bullets" type="Sprite2D" parent="."]
-texture = ExtResource("5_aasqj")
-region_enabled = true
-region_rect = Rect2(0, 0, 12, 12)
+[node name="Bullets" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_mdt4v")
+frame_progress = 0.587736
 
 [connection signal="area_entered" from="." to="HitsOneEnemy" method="_on_bullet_area_entered"]

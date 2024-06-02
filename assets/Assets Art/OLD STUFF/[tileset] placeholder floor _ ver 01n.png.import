@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d07jsiemhvn7a"
-path="res://.godot/imported/[object] bullets_layer01_ver01-export_resized.png-eab935c997be5fb0f993be914c46022a.ctex"
+uid="uid://cl3v4sx1lpn0d"
+path="res://.godot/imported/[tileset] placeholder floor _ ver 01n.png-11195d14be40ecbe54a4b614ef8aca80.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Assets Art/AssetExports/[object] bullets_layer01_ver01-export_resized.png"
-dest_files=["res://.godot/imported/[object] bullets_layer01_ver01-export_resized.png-eab935c997be5fb0f993be914c46022a.ctex"]
+source_file="res://assets/Assets Art/OLD STUFF/[tileset] placeholder floor _ ver 01n.png"
+dest_files=["res://.godot/imported/[tileset] placeholder floor _ ver 01n.png-11195d14be40ecbe54a4b614ef8aca80.ctex"]
 
 [params]
 

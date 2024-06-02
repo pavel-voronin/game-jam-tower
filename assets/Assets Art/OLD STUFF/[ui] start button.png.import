@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ctq15hovxk6ws"
-path="res://.godot/imported/[bg] Background PLUS CREDIT.png-a84ce56587a23d150996c70fb84d701e.ctex"
+uid="uid://c4dkbj4ppxl2a"
+path="res://.godot/imported/[ui] start button.png-cdbcde97dd4586f2599812e3f61ac973.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Assets Art/AssetExports/[bg] Background PLUS CREDIT.png"
-dest_files=["res://.godot/imported/[bg] Background PLUS CREDIT.png-a84ce56587a23d150996c70fb84d701e.ctex"]
+source_file="res://assets/Assets Art/OLD STUFF/[ui] start button.png"
+dest_files=["res://.godot/imported/[ui] start button.png-cdbcde97dd4586f2599812e3f61ac973.ctex"]
 
 [params]
 

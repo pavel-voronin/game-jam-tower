@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://yymtsance2pr"
+path="res://.godot/imported/attackDmg1.wav-298863cbc08e0f1a363d8e90d342e8a7.sample"
+
+[deps]
+
+source_file="res://assets/SFX and BGM/Attack/attackDmg1.wav"
+dest_files=["res://.godot/imported/attackDmg1.wav-298863cbc08e0f1a363d8e90d342e8a7.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

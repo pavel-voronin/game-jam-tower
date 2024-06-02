@@ -42,11 +42,11 @@ func get_price() -> int:
 		1:
 			return 25
 		2:
-			return 75
+			return 60
 		3:
-			return 280
+			return 100
 		_:
-			return 1000
+			return 250
 
 func update_buy_button(_amount: int) -> void:
 	place_buy_button()

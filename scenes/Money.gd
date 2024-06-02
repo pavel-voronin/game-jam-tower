@@ -3,7 +3,7 @@ extends Node
 
 signal amount_updated(amount: int)
 
-@export var amount: int = 25000
+@export var amount: int = 5
 
 func add(amount: int) -> void:
 	self.amount += amount

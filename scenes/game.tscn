@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://b2hbvmuxheibk"]
+[gd_scene load_steps=23 format=3 uid="uid://b2hbvmuxheibk"]
 
 [ext_resource type="Script" path="res://scenes/game.gd" id="1_0c27l"]
 [ext_resource type="Script" path="res://scenes/Money.gd" id="2_0eyvk"]
@@ -11,13 +11,14 @@
 [ext_resource type="Texture2D" uid="uid://b43mfv5ulh7i1" path="res://assets/ground.png" id="5_ugk4c"]
 [ext_resource type="PackedScene" uid="uid://bj2jwsffkrpm7" path="res://scenes/guns/simple_gun.tscn" id="6_mkp5x"]
 [ext_resource type="Script" path="res://scenes/gun-shop.gd" id="8_u15ox"]
-[ext_resource type="Texture2D" uid="uid://foyybv82obwi" path="res://assets/guns.png" id="9_f3f1a"]
 [ext_resource type="Texture2D" uid="uid://v53ha0bjkhh1" path="res://assets/gunshop.png" id="11_ny6q7"]
 [ext_resource type="Script" path="res://scenes/BuyButton.gd" id="11_spcmf"]
 [ext_resource type="Theme" uid="uid://bq2b2e7jcahrm" path="res://assets/theme.tres" id="12_tty33"]
 [ext_resource type="PackedScene" uid="uid://cm2m8w1ua6mjt" path="res://scenes/guns/grenade_launcher.tscn" id="13_lj67y"]
+[ext_resource type="Texture2D" uid="uid://38bokvrgn4ge" path="res://assets/gun-svmg.png" id="13_yalqc"]
 [ext_resource type="AudioStream" uid="uid://dlrf8t7eyjkqj" path="res://assets/SFX and BGM/Menu/openGunMenu.wav" id="15_int75"]
 [ext_resource type="AudioStream" uid="uid://bqogdxgn1h504" path="res://assets/SFX and BGM/Menu/Futurisitc UI Sound 19.ogg" id="16_a0k4j"]
+[ext_resource type="Texture2D" uid="uid://bxcvbdqfjf2ep" path="res://assets/gun-bubblegumbomb-armed.png" id="16_qx5l2"]
 [ext_resource type="AudioStream" uid="uid://c0atq2biekf1o" path="res://assets/SFX and BGM/Music/TowerMusic.wav" id="18_3e7h3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dtovp"]
@@ -26,14 +27,6 @@ size = Vector2(1160, 98)
 [sub_resource type="AtlasTexture" id="AtlasTexture_gnplp"]
 atlas = ExtResource("11_ny6q7")
 region = Rect2(788, 0, 40, 41)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_5esxu"]
-atlas = ExtResource("9_f3f1a")
-region = Rect2(0, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_p58v3"]
-atlas = ExtResource("9_f3f1a")
-region = Rect2(0, 32, 32, 32)
 
 [node name="Game" type="Node2D"]
 texture_filter = 1
@@ -168,12 +161,14 @@ theme_override_constants/separation = 10
 [node name="Label" type="Label" parent="UI/GunShop/VBoxContainer/MarginContainer2/GridContainer/BulletGun"]
 layout_mode = 2
 theme = ExtResource("12_tty33")
-text = "Bullet Gun"
+text = "Subvending
+Machine Gun"
+horizontal_alignment = 1
 
 [node name="TextureRect" type="TextureRect" parent="UI/GunShop/VBoxContainer/MarginContainer2/GridContainer/BulletGun"]
 layout_mode = 2
 size_flags_horizontal = 4
-texture = SubResource("AtlasTexture_5esxu")
+texture = ExtResource("13_yalqc")
 
 [node name="Button" type="Button" parent="UI/GunShop/VBoxContainer/MarginContainer2/GridContainer/BulletGun"]
 layout_mode = 2
@@ -191,19 +186,21 @@ theme_override_constants/separation = 10
 [node name="Label" type="Label" parent="UI/GunShop/VBoxContainer/MarginContainer2/GridContainer/GrenadeLauncher"]
 layout_mode = 2
 theme = ExtResource("12_tty33")
-text = "Grenade Launcher"
+text = "Bubble Gum
+Bomb Launcher"
+horizontal_alignment = 1
 
 [node name="TextureRect" type="TextureRect" parent="UI/GunShop/VBoxContainer/MarginContainer2/GridContainer/GrenadeLauncher"]
 layout_mode = 2
 size_flags_horizontal = 4
-texture = SubResource("AtlasTexture_p58v3")
+texture = ExtResource("16_qx5l2")
 
 [node name="Button" type="Button" parent="UI/GunShop/VBoxContainer/MarginContainer2/GridContainer/GrenadeLauncher"]
 layout_mode = 2
 theme = ExtResource("12_tty33")
-text = "Buy $15"
+text = "Buy $25"
 script = ExtResource("11_spcmf")
-price = 15
+price = 25
 prefab = ExtResource("13_lj67y")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="UI/GunShop"]

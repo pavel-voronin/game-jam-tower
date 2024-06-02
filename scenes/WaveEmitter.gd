@@ -21,7 +21,6 @@ func _ready() -> void:
 	configure()
 
 func _physics_process(delta: float) -> void:
-	print(timer)
 	timer -= delta
 
 	if timer < 0:

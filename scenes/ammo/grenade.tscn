@@ -78,5 +78,6 @@ libraries = {
 }
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+volume_db = -14.0
 
 [connection signal="area_entered" from="." to="HitsEnemyInArea" method="_on_bullet_area_entered"]

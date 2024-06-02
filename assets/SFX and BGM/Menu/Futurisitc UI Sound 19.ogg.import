@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bqogdxgn1h504"
+path="res://.godot/imported/Futurisitc UI Sound 19.ogg-51eb86bba7a406fbd220b67607b889e5.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/SFX and BGM/Menu/Futurisitc UI Sound 19.ogg"
+dest_files=["res://.godot/imported/Futurisitc UI Sound 19.ogg-51eb86bba7a406fbd220b67607b889e5.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

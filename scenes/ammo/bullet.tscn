@@ -57,6 +57,6 @@ shape = SubResource("CircleShape2D_8spq5")
 
 [node name="Bullets" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_mdt4v")
-frame_progress = 0.587736
+frame_progress = 0.147845
 
 [connection signal="area_entered" from="." to="HitsOneEnemy" method="_on_bullet_area_entered"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dd7qu01b5neum"
-path="res://.godot/imported/levels.png-a6e910382d32e95b5c3f382bb559bde4.ctex"
+uid="uid://dp13ooq21cjxl"
+path="res://.godot/imported/[object] tower pala updated.png-57074f1c1f2a8260ee7ff6d11a4b2c81.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/levels.png"
-dest_files=["res://.godot/imported/levels.png-a6e910382d32e95b5c3f382bb559bde4.ctex"]
+source_file="res://assets/Assets Art/ASEPRITE files/[object] tower pala updated.png"
+dest_files=["res://.godot/imported/[object] tower pala updated.png-57074f1c1f2a8260ee7ff6d11a4b2c81.ctex"]
 
 [params]
 

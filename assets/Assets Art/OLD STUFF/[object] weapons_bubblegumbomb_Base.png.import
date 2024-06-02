@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cta6267x3pdbe"
-path="res://.godot/imported/[object] weapons_bubblegumbomb_Base.png-4cf7be3130829637563582fe13a26afb.ctex"
+path="res://.godot/imported/[object] weapons_bubblegumbomb_Base.png-182895daacf76d5a6843c0e4b4c9d4f8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Assets Art/AssetExports/[object] weapons_bubblegumbomb_Base.png"
-dest_files=["res://.godot/imported/[object] weapons_bubblegumbomb_Base.png-4cf7be3130829637563582fe13a26afb.ctex"]
+source_file="res://assets/Assets Art/OLD STUFF/[object] weapons_bubblegumbomb_Base.png"
+dest_files=["res://.godot/imported/[object] weapons_bubblegumbomb_Base.png-182895daacf76d5a6843c0e4b4c9d4f8.ctex"]
 
 [params]
 

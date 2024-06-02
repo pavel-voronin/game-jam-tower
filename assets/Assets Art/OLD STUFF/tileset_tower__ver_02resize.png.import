@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dd7qu01b5neum"
-path="res://.godot/imported/levels.png-a6e910382d32e95b5c3f382bb559bde4.ctex"
+uid="uid://ewweut5ufljd"
+path="res://.godot/imported/tileset_tower__ver_02resize.png-785e838689cccee03d3f13f40bcd60b0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/levels.png"
-dest_files=["res://.godot/imported/levels.png-a6e910382d32e95b5c3f382bb559bde4.ctex"]
+source_file="res://assets/Assets Art/OLD STUFF/tileset_tower__ver_02resize.png"
+dest_files=["res://.godot/imported/tileset_tower__ver_02resize.png-785e838689cccee03d3f13f40bcd60b0.ctex"]
 
 [params]
 

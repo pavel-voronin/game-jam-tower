@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c4yh0jog8ygsr"
-path="res://.godot/imported/[object] weapons_bubblegumbomb_Nozzle.png-be2a3af1e886e12a13b3e4faecffc82e.ctex"
+uid="uid://d1f7w00s2p30k"
+path="res://.godot/imported/ammo-bubblegum.png-8e16f7ca62490ddda941d08768199048.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Assets Art/AssetExports/[object] weapons_bubblegumbomb_Nozzle.png"
-dest_files=["res://.godot/imported/[object] weapons_bubblegumbomb_Nozzle.png-be2a3af1e886e12a13b3e4faecffc82e.ctex"]
+source_file="res://assets/ammo-bubblegum.png"
+dest_files=["res://.godot/imported/ammo-bubblegum.png-8e16f7ca62490ddda941d08768199048.ctex"]
 
 [params]
 

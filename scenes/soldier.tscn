@@ -130,8 +130,9 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_3rty6"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2ulfj"]
 radius = 32.0
+height = 108.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q2v8v"]
 size = Vector2(1, 64)
@@ -166,12 +167,11 @@ animation = &"walk"
 frame_progress = 0.809585
 
 [node name="PhysicalBodyArea" type="CollisionShape2D" parent="."]
-visible = false
-shape = SubResource("CircleShape2D_3rty6")
+position = Vector2(0, -54)
+shape = SubResource("CapsuleShape2D_2ulfj")
 
 [node name="AttackArea" type="Area2D" parent="."]
 visible = false
-position = Vector2(0, 32)
 collision_layer = 0
 collision_mask = 2
 

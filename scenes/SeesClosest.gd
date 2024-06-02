@@ -21,3 +21,4 @@ func _physics_process(delta: float) -> void:
 	var enemy = get_closest_enemy()
 	if enemy:
 		barrel.look_at(enemy.global_position)
+

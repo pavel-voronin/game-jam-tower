@@ -1,7 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://digg53qm3pkwa"]
+[gd_scene load_steps=10 format=3 uid="uid://digg53qm3pkwa"]
 
 [ext_resource type="Script" path="res://scenes/mount_point.gd" id="1_tqfna"]
 [ext_resource type="Texture2D" uid="uid://bt1rhq2yqstba" path="res://assets/mount-points.png" id="2_ff0tu"]
+[ext_resource type="AudioStream" uid="uid://dxsyfufxgwv4s" path="res://assets/SFX and BGM/Building/dismantlingCannon.wav" id="3_uq3rn"]
+[ext_resource type="AudioStream" uid="uid://bvd0d88we8or5" path="res://assets/SFX and BGM/Menu/buyGun.wav" id="4_sxb6b"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_us1r5"]
 atlas = ExtResource("2_ff0tu")
@@ -47,6 +49,12 @@ offset_right = 16.0
 offset_bottom = 16.0
 texture_normal = SubResource("AtlasTexture_d1n0d")
 texture_hover = SubResource("AtlasTexture_gkecd")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_uq3rn")
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_sxb6b")
 
 [connection signal="pressed" from="BuyButton" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="EditButton" to="." method="_on_edit_button_pressed"]

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://umai2cxqwg0o"
+path="res://.godot/imported/LOOP.wav-52aa04e85c24d1bc7ae41654319d513b.sample"
+
+[deps]
+
+source_file="res://assets/SFX and BGM/Music/LOOP.wav"
+dest_files=["res://.godot/imported/LOOP.wav-52aa04e85c24d1bc7ae41654319d513b.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=2
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -36,12 +36,14 @@ func place_gun(new_gun: Gun) -> void:
 	add_child(new_gun)
 	gun.global_position = marker.global_position
 	update_state(root.get_node("Money").amount)
+	$AudioStreamPlayer2.play()
 
 func remove_gun() -> void:
 	remove_child(gun)
 	gun.queue_free()
 	gun = null
 	update_state(root.get_node("Money").amount)
+	$AudioStreamPlayer.play()
 
 func _on_button_pressed() -> void:
 	root.get_node("UI").open_buy_a_gun_modal(self)

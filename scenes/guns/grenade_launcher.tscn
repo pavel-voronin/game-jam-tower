@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://cm2m8w1ua6mjt"]
+[gd_scene load_steps=7 format=3 uid="uid://cm2m8w1ua6mjt"]
 
 [ext_resource type="Script" path="res://scenes/guns/grenade_launcher.gd" id="1_7q5hx"]
 [ext_resource type="Script" path="res://scenes/guns/AttacksParabollicaly.gd" id="2_34evp"]
 [ext_resource type="Script" path="res://scenes/guns/SeesClosestParabollicaly.gd" id="3_6ao6y"]
 [ext_resource type="Texture2D" uid="uid://foyybv82obwi" path="res://assets/guns.png" id="4_21u0i"]
+[ext_resource type="AudioStream" uid="uid://c2yhp4wjhq8kr" path="res://assets/SFX and BGM/Shots/Shot1.mp3" id="5_plvq7"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_lscwh"]
 radius = 800.0
@@ -43,5 +44,8 @@ collision_layer = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea"]
 shape = SubResource("CircleShape2D_lscwh")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_plvq7")
 
 [connection signal="timeout" from="AttacksParabollicaly/Timer" to="AttacksParabollicaly" method="_on_timer_timeout"]

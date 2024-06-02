@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://l633gsrlsqij"]
+[gd_scene load_steps=4 format=3 uid="uid://l633gsrlsqij"]
 
 [ext_resource type="Script" path="res://scenes/game_over.gd" id="1_dp465"]
+[ext_resource type="AudioStream" uid="uid://d3ym47p1hifw" path="res://assets/SFX and BGM/Game Over/Game Over sound effect.mp3" id="2_ywkns"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w01ga"]
 bg_color = Color(1, 1, 1, 1)
@@ -58,5 +59,9 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 38
 theme_override_styles/normal = SubResource("StyleBoxFlat_w01ga")
 text = "Try again"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_ywkns")
+autoplay = true
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -4,9 +4,12 @@ extends Node
 @onready var eyes: Node = $"../SeesClosestParabollicaly"
 @onready var barrel: Sprite2D = $"../Barrel"
 @onready var bullet_start_point: Marker2D = $"../Barrel/BulletStartPoint"
+@onready var audio: AudioStreamPlayer = $"../AudioStreamPlayer"
 
 # Код для запуска снаряда
 func fire(enemy: Enemy) -> void:
+	audio.play()
+
 	var bullet: Node2D = parent.bullet_prefab.instantiate()
 	bullet.strength = parent.strength
 	parent.root.add_child(bullet)

@@ -1,7 +1,6 @@
 extends Node
 
 @onready var parent: Node2D = $".."
-@onready var barrel: Sprite2D = $"../Barrel"
 @onready var attack_area: Area2D = $"../AttackArea"
 
 func get_closest_enemy() -> Enemy:
@@ -16,9 +15,3 @@ func get_closest_enemy() -> Enemy:
 				closest_enemy = enemy
 
 	return closest_enemy
-
-func _physics_process(delta: float) -> void:
-	var enemy = get_closest_enemy()
-	if enemy:
-		barrel.look_at(enemy.global_position)
-

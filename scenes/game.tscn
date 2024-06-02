@@ -77,17 +77,21 @@ enemy_prefab = ExtResource("2_itqq6")
 script = ExtResource("5_knj7d")
 
 [node name="HP" type="Label" parent="UI"]
-offset_left = 24.0
-offset_right = 296.0
-offset_bottom = 67.0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 326.0
+offset_bottom = 83.0
+theme = ExtResource("12_tty33")
 theme_override_font_sizes/font_size = 48
 text = "HP: 100/100
 "
 
 [node name="Resource" type="Label" parent="UI"]
-offset_left = 328.0
-offset_right = 537.0
-offset_bottom = 67.0
+offset_left = 416.0
+offset_top = 16.0
+offset_right = 656.0
+offset_bottom = 83.0
+theme = ExtResource("12_tty33")
 theme_override_font_sizes/font_size = 48
 text = "Money: 5"
 

@@ -2,8 +2,7 @@ extends Node
 
 @onready var parent: Node2D = $".."
 @onready var eyes: Node = $"../SeesClosest"
-@onready var barrel: Sprite2D = $"../Barrel"
-@onready var bullet_start_point: Marker2D = $"../Barrel/BulletStartPoint"
+@onready var bullet_start_point: Marker2D = $"../BulletStartPoint"
 @onready var audio: AudioStreamPlayer = $"../AudioStreamPlayer"
 
 func fire(enemy: Enemy) -> void:

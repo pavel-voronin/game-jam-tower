@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://cdehvbyesyy8y"
+=======
+uid="uid://4n6fcwu66gt4"
+>>>>>>> be92f55 (change the  music)
 path="res://.godot/imported/[object] weapons_noodlelauncher_Nozzle.png-ee99ab132bbfde8d7168f8c9d1062dcf.ctex"
 metadata={
 "vram_texture": false

@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://divmt6m85sxsf"
+=======
+uid="uid://ndh23rkgwtxg"
+>>>>>>> be92f55 (change the  music)
 path="res://.godot/imported/[object] weapons_icecreamlazer.png-dd642285cbc3be133c623f67fb2dcb65.ctex"
 metadata={
 "vram_texture": false

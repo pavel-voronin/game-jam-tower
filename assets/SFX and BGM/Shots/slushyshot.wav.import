@@ -2,7 +2,11 @@
 
 importer="wav"
 type="AudioStreamWAV"
+<<<<<<< HEAD
 uid="uid://dnnml2yjxswd3"
+=======
+uid="uid://cy0femlwo4xjt"
+>>>>>>> be92f55 (change the  music)
 path="res://.godot/imported/slushyshot.wav-9e96b50a4ea1ab21c8339b76192275da.sample"
 
 [deps]

@@ -17,6 +17,10 @@
 [ext_resource type="PackedScene" uid="uid://cm2m8w1ua6mjt" path="res://scenes/guns/grenade_launcher.tscn" id="13_lj67y"]
 [ext_resource type="AudioStream" uid="uid://dlrf8t7eyjkqj" path="res://assets/SFX and BGM/Menu/openGunMenu.wav" id="15_int75"]
 [ext_resource type="AudioStream" uid="uid://bqogdxgn1h504" path="res://assets/SFX and BGM/Menu/Futurisitc UI Sound 19.ogg" id="16_a0k4j"]
+<<<<<<< HEAD
+=======
+[ext_resource type="AudioStream" uid="uid://d2s7mnnqjpxm3" path="res://assets/SFX and BGM/Music/TowerMusic.wav" id="18_3e7h3"]
+>>>>>>> be92f55 (change the  music)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dtovp"]
 size = Vector2(1160, 98)
@@ -245,7 +249,11 @@ layout_mode = 2
 text = "Remove Gun"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+<<<<<<< HEAD
 volume_db = -20.0
+=======
+stream = ExtResource("18_3e7h3")
+>>>>>>> be92f55 (change the  music)
 autoplay = true
 
 [connection signal="amount_updated" from="Money" to="UI" method="_on_money_amount_updated"]

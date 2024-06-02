@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://cvo54itjl63ca"
+=======
+uid="uid://dypx7skb8p4ch"
+>>>>>>> be92f55 (change the  music)
 path="res://.godot/imported/[object] weapons_bubblegumbomb_Base.png-4cf7be3130829637563582fe13a26afb.ctex"
 metadata={
 "vram_texture": false

@@ -2,7 +2,11 @@
 
 importer="wav"
 type="AudioStreamWAV"
+<<<<<<< HEAD
 uid="uid://dpc3vbbq5ihch"
+=======
+uid="uid://6ykxcps1ds6n"
+>>>>>>> be92f55 (change the  music)
 path="res://.godot/imported/Gumshot.wav-5f6e5360532cc7195244331bdef09aaf.sample"
 
 [deps]

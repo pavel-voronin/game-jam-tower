@@ -2,7 +2,11 @@
 
 importer="wav"
 type="AudioStreamWAV"
+<<<<<<< HEAD
 uid="uid://uaxgufhonlpx"
+=======
+uid="uid://d2s7mnnqjpxm3"
+>>>>>>> be92f55 (change the  music)
 path="res://.godot/imported/TowerMusic.wav-d83dcef7c134d48bdf23925286e679bd.sample"
 
 [deps]
@@ -18,7 +22,11 @@ force/max_rate=false
 force/max_rate_hz=44100
 edit/trim=false
 edit/normalize=false
+<<<<<<< HEAD
 edit/loop_mode=0
+=======
+edit/loop_mode=2
+>>>>>>> be92f55 (change the  music)
 edit/loop_begin=0
 edit/loop_end=-1
 compress/mode=0

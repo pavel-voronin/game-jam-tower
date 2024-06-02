@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://scenes/ammo/FliesTowardsEnemyParabollicaly.gd" id="2_tlf6j"]
 [ext_resource type="Script" path="res://scenes/ammo/HitsEnemyInArea.gd" id="3_227le"]
 [ext_resource type="Texture2D" uid="uid://d1f7w00s2p30k" path="res://assets/ammo-bubblegum.png" id="4_uu0e1"]
-[ext_resource type="AudioStream" uid="uid://djwyvqy70i1xx" path="res://assets/SFX and BGM/Shots/Shot2.mp3" id="5_bp6o7"]
+[ext_resource type="AudioStream" uid="uid://vxc8ifivamv0" path="res://assets/SFX and BGM/Shots/gumShot2.wav" id="5_6m3vp"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_8spq5"]
 radius = 6.0
@@ -15,6 +15,7 @@ height = 300.0
 
 [sub_resource type="Animation" id="Animation_mar7j"]
 resource_name = "boom"
+length = 0.8
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -37,7 +38,7 @@ tracks/1/keys = {
 "clips": [{
 "end_offset": 0.0,
 "start_offset": 0.0,
-"stream": ExtResource("5_bp6o7")
+"stream": ExtResource("5_6m3vp")
 }],
 "times": PackedFloat32Array(0)
 }
@@ -78,6 +79,5 @@ libraries = {
 }
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-volume_db = -14.0
 
 [connection signal="area_entered" from="." to="HitsEnemyInArea" method="_on_bullet_area_entered"]

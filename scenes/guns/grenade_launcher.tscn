@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://scenes/guns/AttacksParabollicaly.gd" id="2_34evp"]
 [ext_resource type="Script" path="res://scenes/guns/SeesClosestParabollicaly.gd" id="3_6ao6y"]
 [ext_resource type="Texture2D" uid="uid://bt4hck41urldg" path="res://assets/gun-bubblegumbomb.png" id="4_gikn6"]
-[ext_resource type="AudioStream" uid="uid://c2yhp4wjhq8kr" path="res://assets/SFX and BGM/Shots/Shot1.mp3" id="5_plvq7"]
+[ext_resource type="AudioStream" uid="uid://dqab5y3e5jt7t" path="res://assets/SFX and BGM/Shots/Gumshot.wav" id="5_a482d"]
 [ext_resource type="Texture2D" uid="uid://d1f7w00s2p30k" path="res://assets/ammo-bubblegum.png" id="6_rlhvk"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_lscwh"]
@@ -39,7 +39,7 @@ collision_layer = 0
 shape = SubResource("CircleShape2D_lscwh")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("5_plvq7")
+stream = ExtResource("5_a482d")
 
 [node name="Ammo-bubblegum" type="Sprite2D" parent="."]
 position = Vector2(-60, 0)

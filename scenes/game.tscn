@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://b2hbvmuxheibk"]
+[gd_scene load_steps=24 format=3 uid="uid://b2hbvmuxheibk"]
 
 [ext_resource type="Script" path="res://scenes/game.gd" id="1_0c27l"]
 [ext_resource type="Script" path="res://scenes/Money.gd" id="2_0eyvk"]
@@ -15,7 +15,6 @@
 [ext_resource type="Texture2D" uid="uid://v53ha0bjkhh1" path="res://assets/gunshop.png" id="11_ny6q7"]
 [ext_resource type="Script" path="res://scenes/BuyButton.gd" id="11_spcmf"]
 [ext_resource type="Theme" uid="uid://bq2b2e7jcahrm" path="res://assets/theme.tres" id="12_tty33"]
-[ext_resource type="Script" path="res://scenes/gun-workshop.gd" id="13_7yvh6"]
 [ext_resource type="PackedScene" uid="uid://cm2m8w1ua6mjt" path="res://scenes/guns/grenade_launcher.tscn" id="13_lj67y"]
 [ext_resource type="AudioStream" uid="uid://dlrf8t7eyjkqj" path="res://assets/SFX and BGM/Menu/openGunMenu.wav" id="15_int75"]
 [ext_resource type="AudioStream" uid="uid://bqogdxgn1h504" path="res://assets/SFX and BGM/Menu/Futurisitc UI Sound 19.ogg" id="16_a0k4j"]
@@ -213,66 +212,6 @@ stream = ExtResource("15_int75")
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="UI/GunShop"]
 stream = ExtResource("16_a0k4j")
 
-[node name="GunWorkshop" type="Panel" parent="UI"]
-visible = false
-offset_left = 54.0
-offset_top = 105.0
-offset_right = 866.0
-offset_bottom = 506.0
-script = ExtResource("13_7yvh6")
-
-[node name="VBoxContainer" type="VBoxContainer" parent="UI/GunWorkshop"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="HBoxContainer" type="HBoxContainer" parent="UI/GunWorkshop/VBoxContainer"]
-layout_mode = 2
-
-[node name="MarginContainer" type="MarginContainer" parent="UI/GunWorkshop/VBoxContainer/HBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 3
-theme_override_constants/margin_left = 16
-theme_override_constants/margin_top = 8
-theme_override_constants/margin_bottom = 8
-
-[node name="Label" type="Label" parent="UI/GunWorkshop/VBoxContainer/HBoxContainer/MarginContainer"]
-layout_mode = 2
-size_flags_vertical = 1
-theme_override_font_sizes/font_size = 36
-text = "Manage the gun"
-
-[node name="CloseButton" type="Button" parent="UI/GunWorkshop/VBoxContainer/HBoxContainer"]
-custom_minimum_size = Vector2(60, 0)
-layout_mode = 2
-theme_override_font_sizes/font_size = 39
-text = "x"
-
-[node name="MarginContainer2" type="MarginContainer" parent="UI/GunWorkshop/VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_constants/margin_left = 16
-theme_override_constants/margin_top = 16
-theme_override_constants/margin_right = 16
-theme_override_constants/margin_bottom = 16
-
-[node name="GridContainer" type="GridContainer" parent="UI/GunWorkshop/VBoxContainer/MarginContainer2"]
-layout_mode = 2
-size_flags_vertical = 3
-columns = 2
-
-[node name="VBoxContainer" type="VBoxContainer" parent="UI/GunWorkshop/VBoxContainer/MarginContainer2/GridContainer"]
-layout_mode = 2
-size_flags_horizontal = 4
-theme_override_constants/separation = 10
-
-[node name="Button" type="Button" parent="UI/GunWorkshop/VBoxContainer/MarginContainer2/GridContainer/VBoxContainer"]
-layout_mode = 2
-text = "Remove Gun"
-
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("18_3e7h3")
 autoplay = true
@@ -285,5 +224,3 @@ autoplay = true
 [connection signal="pressed" from="UI/GunShop/VBoxContainer/MarginContainer2/GridContainer/BulletGun/Button" to="UI/GunShop/VBoxContainer/MarginContainer2/GridContainer/BulletGun/Button" method="_on_pressed"]
 [connection signal="buy" from="UI/GunShop/VBoxContainer/MarginContainer2/GridContainer/GrenadeLauncher/Button" to="UI/GunShop" method="_on_button_buy"]
 [connection signal="pressed" from="UI/GunShop/VBoxContainer/MarginContainer2/GridContainer/GrenadeLauncher/Button" to="UI/GunShop/VBoxContainer/MarginContainer2/GridContainer/GrenadeLauncher/Button" method="_on_pressed"]
-[connection signal="pressed" from="UI/GunWorkshop/VBoxContainer/HBoxContainer/CloseButton" to="UI/GunWorkshop" method="_on_close_button_pressed"]
-[connection signal="pressed" from="UI/GunWorkshop/VBoxContainer/MarginContainer2/GridContainer/VBoxContainer/Button" to="UI/GunWorkshop" method="_on_button_pressed"]

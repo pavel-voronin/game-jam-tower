@@ -17,7 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://cm2m8w1ua6mjt" path="res://scenes/guns/grenade_launcher.tscn" id="13_lj67y"]
 [ext_resource type="AudioStream" uid="uid://dlrf8t7eyjkqj" path="res://assets/SFX and BGM/Menu/openGunMenu.wav" id="15_int75"]
 [ext_resource type="AudioStream" uid="uid://bqogdxgn1h504" path="res://assets/SFX and BGM/Menu/Futurisitc UI Sound 19.ogg" id="16_a0k4j"]
-[ext_resource type="AudioStream" uid="uid://umai2cxqwg0o" path="res://assets/SFX and BGM/Music/LOOP.wav" id="18_65jht"]
+[ext_resource type="AudioStream" uid="uid://c0atq2biekf1o" path="res://assets/SFX and BGM/Music/TowerMusic.wav" id="18_3e7h3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dtovp"]
 size = Vector2(1160, 98)
@@ -64,7 +64,7 @@ shape = SubResource("RectangleShape2D_dtovp")
 position = Vector2(1024, 570)
 
 [node name="WaveEmitter" parent="." instance=ExtResource("3_lj5df")]
-position = Vector2(-85, 566)
+position = Vector2(-53, 575)
 enemy_prefab = ExtResource("2_itqq6")
 
 [node name="UI" type="CanvasLayer" parent="."]
@@ -246,8 +246,7 @@ layout_mode = 2
 text = "Remove Gun"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("18_65jht")
-volume_db = -20.0
+stream = ExtResource("18_3e7h3")
 autoplay = true
 
 [connection signal="amount_updated" from="Money" to="UI" method="_on_money_amount_updated"]

@@ -13,4 +13,7 @@ func _on_attack_area_area_entered(area: Area2D) -> void:
 	timer.start()
 
 func hit(area: Area2D) -> void:
+	$"../AnimatedSprite".play("attack")
 	area.hit(parent.strength)
+	await $"../AnimatedSprite".animation_looped
+	$"../AnimatedSprite".play("idle")

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c7mgwtv3bs4ck"
-path="res://.godot/imported/[object] weapons_subvendingmachinegun.png-1e90a02e86adb494d7aca7de537f98bc.ctex"
+uid="uid://38bokvrgn4ge"
+path="res://.godot/imported/gun-svmg.png-aeb0e1b85ed7c253fc531a10676dae2d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Assets Art/AssetExports/[object] weapons_subvendingmachinegun.png"
-dest_files=["res://.godot/imported/[object] weapons_subvendingmachinegun.png-1e90a02e86adb494d7aca7de537f98bc.ctex"]
+source_file="res://assets/gun-svmg.png"
+dest_files=["res://.godot/imported/gun-svmg.png-aeb0e1b85ed7c253fc531a10676dae2d.ctex"]
 
 [params]
 

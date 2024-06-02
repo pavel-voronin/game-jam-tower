@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dnnml2yjxswd3"
+path="res://.godot/imported/slushyshot.wav-9e96b50a4ea1ab21c8339b76192275da.sample"
+
+[deps]
+
+source_file="res://assets/SFX and BGM/Shots/slushyshot.wav"
+dest_files=["res://.godot/imported/slushyshot.wav-9e96b50a4ea1ab21c8339b76192275da.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

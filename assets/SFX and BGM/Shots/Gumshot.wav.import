@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dpc3vbbq5ihch"
+path="res://.godot/imported/Gumshot.wav-5f6e5360532cc7195244331bdef09aaf.sample"
+
+[deps]
+
+source_file="res://assets/SFX and BGM/Shots/Gumshot.wav"
+dest_files=["res://.godot/imported/Gumshot.wav-5f6e5360532cc7195244331bdef09aaf.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

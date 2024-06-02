@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bi3b0i5ye5u5s"
+path="res://.godot/imported/gunShot2.wav-a35d5deb83d97b9a0c4c22a094d1a223.sample"
+
+[deps]
+
+source_file="res://assets/SFX and BGM/Shots/gunShot2.wav"
+dest_files=["res://.godot/imported/gunShot2.wav-a35d5deb83d97b9a0c4c22a094d1a223.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
